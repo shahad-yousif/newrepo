@@ -1,0 +1,117 @@
+Q1
+
+var a=[17,24,4,26,19,30,2,66,40];
+var p=0;
+var l=a.length;
+while(p<l){
+  if(a[p]%2!==0){
+    console.log(a[p]);
+  }
+  p=p+1;
+}
+
+Q2
+
+var a=[17,24,4,26,19,30,2,66,40];
+var p=0;
+var l=a.length;
+var d=0;
+m=a[0];
+    console.log("odd numbers");
+while(p<l){
+  if(a[p]%2!==0){
+    console.log(a[p]);
+    a[d]=a[p];
+  }
+  else if(a[d]<m){
+    m=a[d];
+  }
+  p=p+1;
+}
+console.log("minodd numbers");
+console.log(m);
+
+
+Q3
+
+function isOdd (value){
+  if (value %2!== 0){
+  return true;
+}
+else {
+  return false;
+}
+}
+isOdd(3);
+
+Q4
+
+var a=[17,24,4,26,19,30,2,66,40];
+var p=0;
+var l=a.length;
+minodd=a[0];
+mineven=a[0];
+d=0;
+e=0;
+console.log("odd numbers");
+for(p=0;p<l;p++){
+  if(a[p]%2!==0){
+    console.log(a[p]);
+    a[d]=a[p];
+  }
+     if(a[d]<minodd){
+      minodd=a[d];
+    }
+}
+console.log(" minodd numbers");
+console.log(minodd);
+console.log("even numbers");
+for(p=0;p<l;p++){
+  if(a[p]%2===0){
+   console.log(a[p]);
+   a[e]=a[p];
+  }
+     if(a[e]<mineven){
+      mineven=a[e];
+    }
+}
+console.log(" mineven numbers");
+console.log(mineven);
+
+Q6
+
+var a=[17,24,4,26,19,30,2,66,40];
+a.sort(function(a,b){
+  return a-b
+});
+console.log (a);
+a.sort(function(a,b){
+  return b-a
+});
+console.log (a);
+
+Q7
+
+var A=2;
+var B=4;
+var C=1;
+var D=8;
+var E=2;
+if (A%2===0){
+  console.log("BLUE");
+}
+ if (B%2===0 && C>5){
+  console.log("GREEN");
+}
+if ( B%2===0 && C<5 && E%2!==0 ){
+    console.log("YELLOW"); 
+}
+if( A%2===0 && B%2===0 && C>0 ){
+  console.log("ORANGE");
+}
+if ((C+D+E)>(A+C)){
+   console.log("PURPLE");
+}
+if(A%2===0 && B%2===0 && C<5 && C%2!==0 || C<B){
+   console.log("RED");
+}
