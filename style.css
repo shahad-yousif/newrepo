@@ -1,0 +1,22 @@
+.first{
+    border:2px solid blue;
+    width: 600px;
+    height: 600px;
+    
+}
+.warp{
+    width: 200px;
+    height: 200px;
+    float: left;
+}
+
+.Div1{width: 550px; 
+    height: 256px;
+     white-space:nowrap;
+    overflow: auto; 
+    background:#ecf0f1;
+    border:2px solid blue;
+}
+.inner{float:left;
+
+    padding-left:20px;}
