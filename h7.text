@@ -34,15 +34,21 @@ console.log(m);
 
 Q3
 
-function isOdd (value){
-  if (value %2!== 0){
-  return true;
+var a=[17,24,4,26,19,30,2,66,40];
+
+function isOdd (a){
+  for(i=0;i<a.length;i++){
+  if (a[i] %2!== 0){
+    console.log("odd number:" +" " + true );
+
 }
 else {
-  return false;
+  console.log("even number" +" " + false ); 
+
 }
 }
-isOdd(3);
+}
+isOdd(a);
 
 Q4
 
